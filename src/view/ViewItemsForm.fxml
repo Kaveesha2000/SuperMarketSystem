@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="500.0" styleClass="login-background" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewItemsFormController">
+   <children>
+      <TableView fx:id="tblItem" layoutX="16.0" layoutY="93.0" prefHeight="353.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="81.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="118.0" text="Descrption" />
+            <TableColumn fx:id="colPackSize" prefWidth="88.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="88.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="93.0" text="Qty On Hand" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="500.0" text="Items">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="150.0" layoutY="39.0" prefWidth="200.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

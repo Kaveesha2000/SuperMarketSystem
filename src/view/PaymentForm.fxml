@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="500.0" styleClass="login-background" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" prefHeight="45.0" prefWidth="500.0" text="Payments">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="151.0" layoutY="39.0" prefWidth="200.0" style="-fx-background-color: black;" />
+      <TableView fx:id="tblPayment" layoutX="40.0" layoutY="71.0" prefHeight="307.0" prefWidth="422.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="79.0" text="Order Id" />
+          <TableColumn fx:id="colCustId" prefWidth="83.0" text="Cust Id" />
+            <TableColumn fx:id="colDate" prefWidth="89.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="82.0" text="Time" />
+            <TableColumn fx:id="colTotal" prefWidth="88.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="370.0" textFill="#c30e0e">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="182.0" layoutY="370.0" prefHeight="17.0" prefWidth="88.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="375.0" layoutY="398.0" prefHeight="27.0" prefWidth="80.0" styleClass="save" stylesheets="@../styles/Style.css" text="Print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

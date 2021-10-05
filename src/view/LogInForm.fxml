@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" prefHeight="500.0" prefWidth="700.0" styleClass="login-background" stylesheets="@../styles/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="55.0" prefWidth="700.0" styleClass="admin-background" stylesheets="@../styles/Style.css" text="Supermarket System">
+         <font>
+            <Font name="Bell MT Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/homeIcon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="55.0" prefHeight="447.0" prefWidth="700.0" styleClass="admin-background" stylesheets="@../styles/Style.css">
+         <children>
+            <AnchorPane layoutX="66.0" layoutY="33.0" prefHeight="382.0" prefWidth="569.0">
+               <children>
+                  <ImageView fitHeight="382.0" fitWidth="572.0" layoutX="-2.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/superkk.jpg" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="adminPassword" layoutX="51.0" layoutY="263.0" prefHeight="25.0" prefWidth="460.0" promptText="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="adminUserName" layoutX="51.0" layoutY="222.0" onAction="#moveToPassword" prefHeight="25.0" prefWidth="460.0" promptText="User Name : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="208.0" fitWidth="216.0" layoutX="177.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="errorLabel" layoutX="51.0" layoutY="302.0" prefHeight="17.0" prefWidth="460.0" textFill="#e41b1b">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="415.0" layoutY="338.0" onAction="#logInToSystem" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #1c1cf0; -fx-background-radius: 90;" text="Log In" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="305.0" layoutY="340.0" onAction="#exitFromTheSystem" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #1c1cf0; -fx-background-radius: 90;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

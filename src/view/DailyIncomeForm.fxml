@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="340.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DailyIncomeFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="17.0" prefWidth="500.0" text="Daily Income">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblReport" layoutX="26.0" layoutY="51.0" prefHeight="247.0" prefWidth="444.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="102.0" text="Date" />
+          <TableColumn fx:id="colOrderCost" prefWidth="122.0" text="Order Count" />
+            <TableColumn fx:id="colItemQty" prefWidth="115.0" text="Item Sold Qty" />
+            <TableColumn fx:id="colCost" prefWidth="104.0" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
